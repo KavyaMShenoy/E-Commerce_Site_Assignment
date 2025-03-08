@@ -18,6 +18,10 @@ connectDB();
 
 app.use(cors());
 
+app.get('/',(req,res)=>{
+    res.json("Hello!")
+})
+
 app.use('/auth', usersRoutes);
 app.use('/products', productsRoutes);
 app.use('/orders', ordersRoutes);
