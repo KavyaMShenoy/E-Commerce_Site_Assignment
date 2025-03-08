@@ -1,0 +1,41 @@
+.register-header {
+    display: flex;
+    justify-content: center;
+    background-color: lightseagreen;
+    padding: 5px;
+    color: white;
+}
+
+.register-form {
+    border: 3px solid lightseagreen;
+}
+
+.register-img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+.register-label {
+    color: teal;
+    font-weight: bolder;
+    font-size: larger
+}
+
+.register-input {
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.register-button {
+    background-color: lightseagreen !important;
+    color: white;
+    width: 150px;
+    border: antiquewhite;
+}
+
+.register-button:hover {
+    background-color: teal !important;
+}

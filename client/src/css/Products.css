@@ -1,0 +1,28 @@
+.searchFormContainer {
+  position: relative;
+}
+
+.searchInput {
+  box-sizing: border-box;
+  padding-right: 50px !important;
+}
+
+.searchButton {
+  color: white;
+  position: absolute;
+  border: none;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.form-control:focus {
+  border-color: lightseagreen !important;
+  box-shadow: 0 0 0 .25rem lightseagreen !important;
+}
+
+.backStyle {
+  width: 30px;
+  margin-right: 10px;
+}

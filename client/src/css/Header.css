@@ -1,0 +1,10 @@
+#lblCartCount {
+    font-size: 14px;
+    background: teal;
+    color: white;
+    padding: 5px 10px;
+    vertical-align: top;
+    margin-left: -15px;
+    border-radius: 50%;
+    position: absolute;
+}
