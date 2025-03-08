@@ -16,7 +16,11 @@ app.use(bodyParser.json());
 
 connectDB();
 
-app.use(cors());
+app.use(cors({
+    origin: "https://e-commerce-client-seven-zeta.vercel.app/",
+    credentials: true,
+    methods: ['get','post','delete','put','option']
+}));
 
 app.use('/auth', usersRoutes);
 app.use('/products', productsRoutes);
