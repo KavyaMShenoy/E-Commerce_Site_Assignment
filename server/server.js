@@ -19,7 +19,8 @@ connectDB();
 app.use(cors({
     origin: "https://e-commerce-client-seven-zeta.vercel.app",
     credentials: true,
-    methods: ['get','post','delete','put','option']
+    methods: ['get','post','delete','put','option'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 app.use('/auth', usersRoutes);
