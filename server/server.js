@@ -17,10 +17,12 @@ app.use(bodyParser.json());
 connectDB();
 
 app.use(cors({
-    origin: 'https://e-commerce-client-seven-zeta.vercel.app',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true
+    origin: "https://e-commerce-client-seven-zeta.vercel.app", // Allow your frontend domain
+    methods: "GET,POST,PUT,DELETE,OPTIONS",
+    allowedHeaders: "Content-Type,Authorization"
 }));
+
+app.options("*", cors());
 
 app.get('/', (req, res) => {
     res.json("Hello!")
